@@ -1,8 +1,17 @@
 # dotfiles
 
-Various configuration files (bash, tmux, vim etc.)
+Various personal configuration files (bash, tmux, vim etc.)
 
-Everything below assumes Arch Linux, but most of the application specific parts should be usable on other \*nixes.
+Everything below assumes Arch Linux, but application specific parts should work on other \*nixes with minimal modifications.
+
+## .bashrc
+
+I have a simple `.bashrc` with some useful features:
+
+- Start X by logging into `tty1`, no need for fancy display managers like [GDM](https://wiki.archlinux.org/index.php/GDM).
+- Tab auto completion for `sudo` and `go`.
+- `vim` as `$EDITOR`.
+- Some useful functions and aliases.
 
 ## Powerline for Bash
 
@@ -56,8 +65,12 @@ Gnome Terminal will close. Open it again and choose the profile from right click
 
 - If you installed `powerline-fonts-git`, I recommend `Droid Sans Mono for Powerline Regular` in terminal settings.
 
-## Screenshot
+## Screenshots
 
 If you followed the steps for powerline, tmux and Gnome Terminal, it should look like this:
 
 ![Terminal](/screenshots/terminal.png?raw=true "Perfect.")
+
+You can also run the `colors` function from `.bashrc` to see a nice grid of your current terminal color scheme:
+
+![Colors](/screenshots/colors.png?raw=true "Color grid")
