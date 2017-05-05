@@ -22,6 +22,8 @@ POWERLINE_BASH_SELECT=1
 
 # Auto complete for sudo
 complete -cf sudo
+
+# Colors for ls
 eval `dircolors -b`
 
 # Always open files with vim
