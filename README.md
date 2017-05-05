@@ -24,7 +24,7 @@ POWERLINE_BASH_SELECT=1
 
 ## Gnome Terminal Theme
 
-- Copy `.config/base16-gnome-terminal` from this repository to `~/.config/base16-gnome-terminal`.
+- Copy `config/base16-gnome-terminal` from this repository to `~/.config/base16-gnome-terminal`.
 - Run the script for the theme you like, e.g:
 
 ```sh
