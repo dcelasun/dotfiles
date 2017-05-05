@@ -6,7 +6,7 @@ Everything below assumes Arch Linux, but most of the application specific parts 
 
 ## Powerline for Bash
 
-Install powerline from the official repositories, and powerline-fonts-git from AUR.
+Install [powerline](https://www.archlinux.org/packages/community/x86_64/powerline/) from the official repositories, and [powerline-fonts-git](https://aur.archlinux.org/packages/powerline-fonts-git/) from AUR.
 ```sh
 $ pacman -S powerline powerline-vim
 $ packer -S powerline-fonts-git
@@ -28,7 +28,7 @@ I use the [basic version](https://github.com/amix/vimrc/blob/master/vimrcs/basic
 
 ## Tmux Configuration
 
-Sane keybindings, some basic plugins like yank (for copy/paste) and resurrect (to save/restore tmux state).
+Sane keybindings, some basic plugins like [yank](https://github.com/tmux-plugins/tmux-yank) (for copy/paste) and [resurrect](https://github.com/tmux-plugins/tmux-resurrect) (to save/restore tmux state).
 
 - First, install [tpm](https://github.com/tmux-plugins/tpm), the tmux plugin manager:
 
@@ -40,6 +40,8 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - Run `tmux` and install all plugins with `Ctrl-A + I` (that's capital `i`).
 
 ## Gnome Terminal Theme
+
+I use the Gnome Terminal [version](https://github.com/chriskempson/base16-gnome-terminal) of the excellent [base16](http://chriskempson.com/projects/base16/) project.
 
 - Copy `config/base16-gnome-terminal` from this repository to `~/.config/base16-gnome-terminal`.
 - Run the script for the theme you like, e.g:
