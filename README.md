@@ -50,6 +50,10 @@ source .config/base16-gnome-terminal/color-scripts/base16-oceanicnext-256.sh
 
 Gnome Terminal will close. Open it again and choose the profile from right click -> Profiles.
 
+## Gnome Terminal Font
+
+- If you installed `powerline-fonts-git`, I recommend `Droid Sans Mono for Powerline Regular` in terminal settings.
+
 ## Screenshot
 
 If you followed the steps for powerline, tmux and Gnome Terminal, it should look like this:
