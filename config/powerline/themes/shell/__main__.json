@@ -1,0 +1,10 @@
+{
+    "segment_data": {
+        "cwd": {
+            "args": {
+                "dir_shorten_len": 1,
+                "dir_limit_depth": 3
+            }
+        }
+    }
+}
