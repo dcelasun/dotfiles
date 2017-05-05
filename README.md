@@ -49,3 +49,9 @@ source .config/base16-gnome-terminal/color-scripts/base16-oceanicnext-256.sh
 ```
 
 Gnome Terminal will close. Open it again and choose the profile from right click -> Profiles.
+
+## Screenshot
+
+If you followed the steps for powerline, tmux and Gnome Terminal, it should look like this:
+
+![Terminal](/screenshots/terminal.png?raw=true "Perfect.")
