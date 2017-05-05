@@ -22,6 +22,23 @@ POWERLINE_BASH_SELECT=1
 . /usr/lib/python/3.6/site-packages/powerline/bindings/bash/powerline.sh
 ```
 
+## Vim Configuration
+
+I use the [basic version](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) of [amix](https://github.com/amix/vimrc)'s ultimate Vim configuration.
+
+## Tmux Configuration
+
+Sane keybindings, some basic plugins like yank (for copy/paste) and resurrect (to save/restore tmux state).
+
+- First, install [tpm](https://github.com/tmux-plugins/tpm), the tmux plugin manager:
+
+```sh
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+- Copy `.tmux.conf` from this repository to `~/.tmux.conf`
+- Run `tmux` and install all plugins with `Ctrl-A + I` (that's capital `i`).
+
 ## Gnome Terminal Theme
 
 - Copy `config/base16-gnome-terminal` from this repository to `~/.config/base16-gnome-terminal`.
