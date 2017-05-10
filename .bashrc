@@ -41,6 +41,9 @@ source ~/.go-pkg-complete.bash.inc
 # Not sure if necessary
 . /etc/profile.d/vte.sh
 
+# Add some directories to $PATH
+PATH=$GOPATH/bin:$HOME/.local/bin:$PATH
+
 ###########
 # Aliases #
 ###########
