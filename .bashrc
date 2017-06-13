@@ -41,8 +41,13 @@ source ~/.go-pkg-complete.bash.inc
 # Not sure if necessary
 . /etc/profile.d/vte.sh
 
-# Add some directories to $PATH
-PATH=$GOPATH/bin:$HOME/.local/bin:$PATH
+# Add $GOPATH/bin to $PATH
+GOPATH="$HOME/go"
+PATH="$GOPATH/bin:$HOME/.local/bin:$PATH"
+
+# Force npm global install to use $HOME
+NPM_PACKAGES="${HOME}/.npm-packages"
+PATH="$NPM_PACKAGES/bin:$PATH"
 
 ###########
 # Aliases #
