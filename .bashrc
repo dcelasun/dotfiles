@@ -77,6 +77,20 @@ manpdf(){
   evince /tmp/"$1.pdf" &
 }
 
+# Download a source archive from AUR, extract the archive and cd to the directory.
+aurfetch(){
+    if [ -z "$1" ]; then
+        echo "Need package name"
+        return 1
+    fi
+
+    curl https://aur.archlinux.org/cgit/aur.git/snapshot/"$1".tar.gz > ~/builds/"$1".tar.gz
+    cd ~/builds
+    rm -rf ~/builds/"$1"
+    tar -xzvf "$1".tar.gz
+    cd "$1"
+}
+
 # Display and compare terminal colors in a grid.
 # See README for a screenshot.
 colors(){
