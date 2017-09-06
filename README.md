@@ -15,7 +15,7 @@ I have a simple `.bashrc` with some useful features:
 
 ## .xinitrc
 
-I have a very simple .xinitrc that sets XDG session type to X11, tells Qt to use the GTK theme and starts session. To use it, simply copy it to your `$HOME` and start X with `startx`.
+I have a very simple `.xinitrc` that sets the XDG session type to X11, tells Qt to use the GTK theme and starts the Gnome session. To use it, simply copy it to your `$HOME` and start X with `startx`.
 
 ## Powerline for Bash
 
