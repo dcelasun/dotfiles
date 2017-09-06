@@ -1,6 +1,6 @@
 # dotfiles
 
-Various personal configuration files (bash, tmux, vim etc.)
+Various personal configuration files (X, bash, tmux, vim etc.)
 
 Everything below assumes Arch Linux, but application specific parts should work on other \*nixes with minimal modifications.
 
@@ -8,10 +8,14 @@ Everything below assumes Arch Linux, but application specific parts should work 
 
 I have a simple `.bashrc` with some useful features:
 
-- Start X by logging into `tty1`, no need for fancy display managers like [GDM](https://wiki.archlinux.org/index.php/GDM).
+- Start X by logging into `tty1`, no need for fancy display managers like [GDM](https://wiki.archlinux.org/index.php/GDM) (see `.xinitrc` section below).
 - Tab auto completion for `sudo` and `go`.
 - `vim` as `$EDITOR`.
 - Some useful functions and aliases.
+
+## .xinitrc
+
+I have a very simple .xinitrc that sets XDG session type to X11, tells Qt to use the GTK theme and starts session. To use it, simply copy it to your `$HOME` and start X with `startx`.
 
 ## Powerline for Bash
 
