@@ -54,16 +54,12 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## Gnome Terminal Theme
 
-I use the Gnome Terminal [version](https://github.com/chriskempson/base16-gnome-terminal) of the excellent [base16](http://chriskempson.com/projects/base16/) project.
+I use the "Chalk" theme from the excellent [Gogh](http://mayccoll.github.io/Gogh/).
 
-- Copy `config/base16-gnome-terminal` from this repository to `~/.config/base16-gnome-terminal`.
-- Run the script for the theme you like, e.g:
-
-```sh
-source .config/base16-gnome-terminal/color-scripts/base16-oceanicnext-256.sh
-```
-
-Gnome Terminal will close. Open it again and choose the profile from right click -> Profiles.
+- [Install](https://github.com/Mayccoll/Gogh/blob/master/content/install.md#install) Gogh. Arch Linux users can use the [AUR package](https://aur.archlinux.org/packages/gogh-git/).
+- Run `gogh` in a terminal.
+- Type `23` and hit <kbd>enter</kbd>.
+- Right click anywhere in terminal and choose `Profiles -> Chalk`.
 
 ## Gnome Terminal Font
 
