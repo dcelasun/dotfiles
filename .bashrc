@@ -59,6 +59,7 @@ alias rm='rm -i'
 alias nocomment='egrep -v "^\s*(#|$)"'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman --color auto'
+alias mksrcinfo='makepkg --printsrcinfo' # pkgbuild-introspection is dead, long live makepkg
 alias vi='vim'
 alias ga='git add '
 alias gc='git commit -S -m '
