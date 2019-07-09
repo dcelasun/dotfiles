@@ -37,6 +37,10 @@ export GIT_MERGE_AUTOEDIT=no
 # See https://github.com/skelterjohn/go-pkg-complete
 source ~/.go-pkg-complete.bash.inc
 
+# Set TTY for GPG signing
+# See https://unix.stackexchange.com/a/257065
+export GPG_TTY=$(tty)
+
 # Import standard VTE configuration
 # Not sure if necessary
 . /etc/profile.d/vte.sh
