@@ -1,4 +1,4 @@
-let $PYTHONPATH='/usr/lib/python3.8/site-packages'
+let $PYTHONPATH='/usr/lib/python3.9/site-packages'
 set laststatus=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
