@@ -30,6 +30,9 @@ eval `dircolors -b`
 export EDITOR=/usr/bin/vim
 export VISUAL=$EDITOR
 
+# Ignore duplicates and commands starting with spaces from history
+export HISTCONTROL=ignoreboth
+
 # Stop git from asking me to enter a merge commit message
 export GIT_MERGE_AUTOEDIT=no
 
