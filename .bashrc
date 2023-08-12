@@ -40,17 +40,22 @@ export GIT_MERGE_AUTOEDIT=no
 # See https://github.com/skelterjohn/go-pkg-complete
 source ~/.go-pkg-complete.bash.inc
 
+# Auto complete for kubectl
+source ~/.kube/completion.bash.inc
+
 # Set TTY for GPG signing
 # See https://unix.stackexchange.com/a/257065
 export GPG_TTY=$(tty)
+
+# Use NVM for Node
+source /usr/share/nvm/init-nvm.sh
 
 # Import standard VTE configuration
 # Not sure if necessary
 . /etc/profile.d/vte.sh
 
-# Add $GOPATH/bin to $PATH
-GOPATH="$HOME/go"
-PATH="$GOPATH/bin:$HOME/.local/bin:$PATH"
+# Language specific binaries
+export PATH=$HOME/.bin:$HOME/.cargo/bin:$HOME/.npm-packages/bin:$HOME/go/bin:$PATH
 
 # Force npm global install to use $HOME
 NPM_PACKAGES="${HOME}/.npm-packages"
@@ -79,11 +84,6 @@ alias gl='git pull'
 # Functions #
 #############
 
-# Read a manpage as PDF
-manpdf(){
-  man -t "$1" | ps2pdf - /tmp/"$1.pdf"
-  evince /tmp/"$1.pdf" &
-}
 
 # Download a source archive from AUR, extract the archive and cd to the directory.
 aurfetch(){
