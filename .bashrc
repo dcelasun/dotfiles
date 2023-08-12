@@ -43,6 +43,9 @@ source ~/.go-pkg-complete.bash.inc
 # Auto complete for kubectl
 source ~/.kube/completion.bash.inc
 
+# Auto complete for flux
+source ~/.kube/flux.bash.inc
+
 # Set TTY for GPG signing
 # See https://unix.stackexchange.com/a/257065
 export GPG_TTY=$(tty)
