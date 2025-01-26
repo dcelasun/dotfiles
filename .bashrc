@@ -45,6 +45,12 @@ source ~/.go-pkg-complete.bash.inc
 # Auto complete for kubectl
 source ~/.kube/completion.bash.inc
 
+# kubectl plugins via krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Set KUBECONFIG
+export KUBECONFIG=$(find ~/.kube \( -name '*.yaml' -o -name '*.yml' \) -print0 | xargs -0 echo | tr ' ' ':')
+
 # Auto complete for flux
 source ~/.kube/flux.bash.inc
 
