@@ -89,7 +89,7 @@ alias gc='git commit -S -m '
 alias gt='git status'
 alias gp='git push'
 alias gl='git pull'
-
+alias k='kubectl'
 
 #############
 # Functions #
