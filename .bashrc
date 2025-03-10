@@ -25,6 +25,9 @@ POWERLINE_BASH_SELECT=1
 # Auto complete for sudo
 complete -cf sudo
 
+# Auto complete for kubectl alias
+complete -o default -F __start_kubectl k
+
 # Colors for ls
 eval `dircolors -b`
 
