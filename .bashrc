@@ -93,6 +93,7 @@ alias gt='git status'
 alias gp='git push'
 alias gl='git pull'
 alias k='kubectl'
+alias gte='gnome-text-editor'
 
 #############
 # Functions #
