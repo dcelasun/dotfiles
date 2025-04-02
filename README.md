@@ -54,16 +54,15 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## Gnome Terminal Theme
 
-I use the "Chalk" theme from the excellent [Gogh](http://mayccoll.github.io/Gogh/).
+I use a theme called "Gorgeous". It's source has been lost to the sands of time, but you can install it from this repository.
 
-- [Install](https://github.com/Mayccoll/Gogh/blob/master/content/install.md#install) Gogh. Arch Linux users can use the [AUR package](https://aur.archlinux.org/packages/gogh-git/).
-- Run `gogh` in a terminal.
-- Type `23` and hit <kbd>enter</kbd>.
-- Right click anywhere in terminal and choose `Profiles -> Chalk`.
+- Run the following command while in the directory you've cloned this repository into:
+- `cat gnome-terminal-profiles.conf | dconf load /org/gnome/terminal/legacy/profiles:/`
+- Right click anywhere in terminal and choose `Profiles -> Gorgeous`.
 
 ## Gnome Terminal Font
 
-- If you installed `powerline-fonts-git`, I recommend `Droid Sans Mono for Powerline Regular` in terminal settings.
+- If you installed `powerline-fonts-git`, I recommend `Droid Sans Mono for Powerline Regular` in terminal settings for your profile.
 
 ## Screenshots
 
