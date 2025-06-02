@@ -56,6 +56,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 I use the "Chalk" theme from the excellent [Gogh](http://mayccoll.github.io/Gogh/).
 
+- Make sure you have at least 1 custom profile enabled in Gnome Terminal, otherwise this won't work! Create a dummy if you need to.
 - [Install](https://github.com/Mayccoll/Gogh/blob/master/content/install.md#install) Gogh. Arch Linux users can use the [AUR package](https://aur.archlinux.org/packages/gogh-git/).
 - Run `gogh` in a terminal.
 - Type `23` and hit <kbd>enter</kbd>.
