@@ -27,6 +27,11 @@ if [[ -f /usr/share/blesh/ble.sh ]]; then
   source /usr/share/blesh/ble.sh
 fi
 
+# Enable atuin if installed
+if command -v atuin; then
+  eval "$(atuin init bash)"
+fi
+
 # Auto complete for sudo
 complete -cf sudo
 
