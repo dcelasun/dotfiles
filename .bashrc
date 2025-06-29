@@ -22,16 +22,6 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/lib/python3.13/site-packages/powerline/bindings/bash/powerline.sh
 
-# Enable ble.sh if installed
-if [[ -f /usr/share/blesh/ble.sh ]]; then
-  source /usr/share/blesh/ble.sh
-fi
-
-# Enable atuin if installed
-if command -v atuin; then
-  eval "$(atuin init bash)"
-fi
-
 # Auto complete for sudo
 complete -cf sudo
 
@@ -155,4 +145,12 @@ for b in {0..8}; do
 done
 echo "     └──────────────────────────────────────────────────────────────────────────┘"
 }
+
+# Enable bash-preexec if installed
+[[ -f /usr/share/bash-preexec/bash-preexec.sh ]] && source /usr/share/bash-preexec/bash-preexec.sh
+
+# Enable atuin if installed
+if command -v atuin; then
+  eval "$(atuin init bash)"
+fi
 
