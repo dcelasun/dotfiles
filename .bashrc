@@ -22,6 +22,11 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/lib/python3.13/site-packages/powerline/bindings/bash/powerline.sh
 
+# Enable ble.sh if installed
+if [[ -f /usr/share/blesh/ble.sh ]]; then
+  source /usr/share/blesh/ble.sh
+fi
+
 # Auto complete for sudo
 complete -cf sudo
 
