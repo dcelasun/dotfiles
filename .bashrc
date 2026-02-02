@@ -52,7 +52,8 @@ source ~/.kube/completion.bash.inc
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Set KUBECONFIG
-export KUBECONFIG=$(find ~/.kube -name '*.yml' 2>/dev/null | tr '\n' ':' | sed 's/:$//')
+alias kubemerge='KUBECONFIG=$(find ~/.kube -name "*.yml" 2>/dev/null | tr "\n" ":" | sed "s/:$//") kubectl config view --flatten > ~/.kube/config'
+export KUBECONFIG=~/.kube/config
 
 # Auto complete for flux
 source ~/.kube/flux.bash.inc
