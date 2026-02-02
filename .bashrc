@@ -52,7 +52,7 @@ source ~/.kube/completion.bash.inc
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Set KUBECONFIG
-export KUBECONFIG=$(find ~/.kube \( -name '*.yaml' -o -name '*.yml' \) -print0 | xargs -0 echo | tr ' ' ':')
+export KUBECONFIG=$(find ~/.kube -name '*.yml' 2>/dev/null | tr '\n' ':' | sed 's/:$//')
 
 # Auto complete for flux
 source ~/.kube/flux.bash.inc
