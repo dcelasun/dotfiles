@@ -1,15 +1,6 @@
 # Don't read .bashrc for non-interactive sessions
 [ -z "$PS1" ] && return
 
-#######################
-# X Server Auto Start #
-#######################
-
-# Immediately start the X server if logging in from tty1.
-if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
-    startx
-fi
-
 nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' > /dev/null 2>&1
 
 #######################
