@@ -1,7 +1,7 @@
 [user]
 	name = D. Can Celasun
 	email = <omitted>
-	signingkey = FA03860D7B4C3986
+	signingkey = A993AAC4B4BA2A75
 [push]
 	default = simple
 	followTags = true
