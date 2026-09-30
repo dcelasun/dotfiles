@@ -86,12 +86,17 @@ alias gp='git push'
 alias gl='git pull'
 alias k='kubectl'
 alias gte='gnome-text-editor'
-alias awslogin='aws sso login --no-browser'
 
 #############
 # Functions #
 #############
 
+# AWS SSO login, no brower, copy URL to clipboard
+awslogin() {
+  set -o pipefail
+  aws sso login --no-browser --profile "$1" 2>&1 \
+    | tee -p >(grep -m1 -oE 'https://[^[:space:]]+' | wl-copy)
+}
 
 # Download a source archive from AUR, extract the archive and cd to the directory.
 aurfetch(){
