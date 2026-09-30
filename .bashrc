@@ -86,6 +86,7 @@ alias gp='git push'
 alias gl='git pull'
 alias k='kubectl'
 alias gte='gnome-text-editor'
+alias awslogin='aws sso login --no-browser'
 
 #############
 # Functions #
